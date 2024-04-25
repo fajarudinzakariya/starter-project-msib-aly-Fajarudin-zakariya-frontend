@@ -9,6 +9,7 @@ import LoginPage from "./Pages/login";
 import RegisterPage from "./Pages/register";
 import NotFoundPage from "./Pages/NotFound";
 import HomePage from "./Pages/Home";
+import ProfilePage from "./Pages/Profile";
 
 
 const router = createBrowserRouter([
@@ -25,9 +26,14 @@ const router = createBrowserRouter([
     element: <HomePage />,
   },
   {
+    path: "/Profile",
+    element: <ProfilePage />,
+  },
+  {
     path: "*",
     element: <NotFoundPage />,
   },
+
 
 ]);
 
