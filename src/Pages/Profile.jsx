@@ -1,16 +1,24 @@
 import React from 'react';
+import Footer from '../components/Footer';
+import { useNavigate } from "react-router-dom"
 
 export default function ProfilePage() {
+    const navigate = useNavigate()
     return (
         <div class="bg-gray-100">
             <div class="container mx-auto py-8">
+                <div className="flex justify-start ">
+                    <button
+                        onClick={() => navigate('/Home')}
+                        type="button" className=" ml-4 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Back</button>
+                </div>
                 <div class="grid grid-cols-4 sm:grid-cols-12 gap-6 px-4">
                     <div class="col-span-4 sm:col-span-3">
                         <div class="bg-white shadow rounded-lg p-6">
                             <div class="flex flex-col items-center">
-                                <img src="https://randomuser.me/api/portraits/men/94.jpg" class="w-32 h-32 bg-gray-300 rounded-full mb-4 shrink-0">
+                                <img src="" class="w-32 h-32 bg-gray-300 rounded-full mb-4 shrink-0">
                                 </img>
-                                <h1 class="text-xl font-bold">John Doe</h1>
+                                <h1 class="text-xl font-bold">Fajarudin Zakariya</h1>
                                 <p class="text-gray-700">Software Developer</p>
                                 <div class="flex justify-center items-center gap-6 my-6">
                                     <a class="text-gray-700 hover:text-orange-600" aria-label="Visit TrendyMinds LinkedIn" href=""
@@ -82,11 +90,48 @@ export default function ProfilePage() {
                                     tortor ullamcorper, ut vestibulum velit convallis. Aenean posuere risus non velit egestas
                                     suscipit.
                                 </p>
+                                <div class="flex justify-between flex-wrap gap-2 w-full">
+                                    <span class="text-gray-700 font-bold">Web Developer</span>
+                                    <p>
+                                        <span class="text-gray-700 mr-2">at ABC Company</span>
+                                        <span class="text-gray-700">2017 - 2019</span>
+                                    </p>
+                                </div>
+                                <p class="mt-2">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed finibus est vitae
+                                    tortor ullamcorper, ut vestibulum velit convallis. Aenean posuere risus non velit egestas
+                                    suscipit.
+                                </p>
                             </div>
+                            <div class="flex justify-between flex-wrap gap-2 w-full">
+                                <span class="text-gray-700 font-bold">Web Developer</span>
+                                <p>
+                                    <span class="text-gray-700 mr-2">at ABC Company</span>
+                                    <span class="text-gray-700">2017 - 2019</span>
+                                </p>
+                            </div>
+                            <p class="mt-2">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed finibus est vitae
+                                tortor ullamcorper, ut vestibulum velit convallis. Aenean posuere risus non velit egestas
+                                suscipit.
+                            </p>
+                            <div class="flex justify-between flex-wrap gap-2 w-full">
+                                <span class="text-gray-700 font-bold">Web Developer</span>
+                                <p>
+                                    <span class="text-gray-700 mr-2">at ABC Company</span>
+                                    <span class="text-gray-700">2017 - 2019</span>
+                                </p>
+                            </div>
+                            <p class="mt-2">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed finibus est vitae
+                                tortor ullamcorper, ut vestibulum velit convallis. Aenean posuere risus non velit egestas
+                                suscipit.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }
